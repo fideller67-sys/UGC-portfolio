@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+body {
+  @apply bg-[#FFF0F5] text-slate-900 font-sans antialiased overflow-x-hidden;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-[#FFF0F5];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-pink-300 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-pink-400;
+}
+
+/* Background Animations */
+.bg-blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(60px); /* Reduced blur for sharper edges */
+  z-index: -1;
+  animation: float 6s infinite ease-in-out alternate; /* Faster animation */
+  opacity: 0.9; /* Higher opacity */
+  mix-blend-mode: multiply; /* Helps the colors stand out more against the light background */
+}
+
+.blob-1 {
+  top: -10%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(255,105,180,0.8) 0%, rgba(255,105,180,0) 70%); /* Hot Pink */
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  bottom: -20%;
+  right: -10%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(255,20,147,0.8) 0%, rgba(255,20,147,0) 70%); /* Deep Pink */
+  animation-delay: -3s;
+}
+
+.blob-3 {
+  top: 40%;
+  left: 30%;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(219,112,147,0.8) 0%, rgba(219,112,147,0) 70%); /* Pale Violet Red */
+  animation-delay: -6s;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(15%, 15%) scale(1.15); } /* Larger movement */
+  100% { transform: translate(-10%, 20%) scale(0.9); }
+}
+
+/* Glass effect for modern UI elements if needed */
+.glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
