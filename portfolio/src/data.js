@@ -1,9 +1,36 @@
+import hero1 from "./assets/photo_2026-05-05_22-49-46.jpg";
+import hero2 from "./assets/photo_2026-05-05_15-36-45.jpg";
+import hero3 from "./assets/photo_2026-05-05_15-35-50.jpg";
+import aboutImg from "./assets/photo_2026-05-05_15-36-40.jpg";
+
+import photo1 from "./assets/photo_2026-05-05_15-36-45.jpg";
+import photo2 from "./assets/photo_2026-05-05_15-36-40.jpg";
+import photo5 from "./assets/photo_2026-05-05_15-36-20.jpg"
+import photo6 from "./assets/photo_2026-05-05_15-36-17.jpg";
+
+import photoFirst1 from "./assets/photo_2026-05-05_15-35-44.jpg";
+import photoFirst2 from "./assets/photo_2026-05-05_15-36-49.jpg";
+
+// Remaining photos
+import photo7 from "./assets/photo_2026-05-05_15-01-52.jpg";
+import photo8 from "./assets/photo_2026-05-05_15-35-30.jpg";
+import photo9 from "./assets/photo_2026-05-05_15-35-54.jpg";
+import photo10 from "./assets/photo_2026-05-05_15-35-58.jpg";
+import photo11 from "./assets/photo_2026-05-05_15-36-06.jpg";
+import photo12 from "./assets/photo_2026-05-05_15-36-12.jpg";
+import photo13 from "./assets/photo_2026-05-05_15-36-55.jpg";
+import photo14 from "./assets/photo_2026-05-05_15-36-59.jpg";
+
+// Video assets
+import video1 from "./assets/video_2026-05-06_00-49-10.mp4";
+import video2 from "./assets/video_2026-05-06_00-53-29.mp4";
+
 export const siteData = {
   // General Info
-  name: "Nwankwo Jennifer",
+  name: "Okorie Jennifer",
   role: "UGC Creator",
   email: "nwankwojennifer862@gmail.com",
-  phone: "+234 7087847693", // e.g., "+234 123456789 - telegram"
+  phone: "+234 9166645513", // e.g., "+234 123456789 - telegram"
   socials: {
     instagram: "https://instagram.com/yourprofile",
     tiktok: "https://tiktok.com/@yourprofile",
@@ -12,36 +39,60 @@ export const siteData = {
 
   // Hero Section
   hero: {
-    image1: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop",
-    image2: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop",
-    image3: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=400&auto=format&fit=crop",
+    image1: hero1,
+    image2: hero2,
+    image3: hero3,
   },
 
   // About Section
   about: {
-    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=400&auto=format&fit=crop",
+    image: aboutImg,
     subheading: "How to's • Trends • Unboxing & more",
-    bioParagraph1: "I'm a UGC creator with a strong passion for content creation, storytelling and strategy with skills in coaching and writing.",
+    bioParagraph1: "Being a beginner doesn't change the fact that the skills are inbuilt already. I am a passionate UGC creator looking forward to working with brands to deliver quality for appreciation.",
     bioParagraph2: "I help brands communicate their message clearly and confidently through engaging content.",
     quote: "Content that resonates with your audience will lead to more conversions."
   },
 
   // Photo Portfolio Section
   photos: [
-    "https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1512496015851-a1fbaf69ba10?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1576158114254-3ba81558b87d?q=80&w=400&auto=format&fit=crop",
+    {
+      src: photoFirst1,
+      caption: "I picture of me on old school day, we were asked to dress like the 90’s\n\nI Love Fashion!❤️❤️❤️"
+    },
+    {
+      src: photoFirst2,
+      caption: "Also good at Hair niche, Skincare, Clothes, travel.\nJust email me."
+    },
+    { src: photo1 },
+    { src: photo2 },
+    { src: photo3 },
+    { src: photo4 },
+    { src: photo5 },
+    { src: photo6 },
+    { src: photo7 },
+    { src: photo8 },
+    { src: photo9 },
+    { src: photo10 },
+    { src: photo11 },
+    { src: photo12 },
+    { src: photo13 },
+    { src: photo14 },
   ],
 
   // Video Portfolio Section
   // You can add raw .mp4 URLs here. 
   // For TikTok embeds, you would need to use a TikTok embed component instead of a <video> tag.
   videos: [
-    "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-    "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    {
+      src: video1,
+      caption: "This is the content I created for my school trade fair event.",
+      link: "https://vt.tiktok.com/ZS9CcSMMQ/"
+    },
+    {
+      src: video2,
+      caption: "Check out this TikTok I posted! https://vt.tiktok.com/ZS9C3L5H6/\n\nYou can also take a look at my product video in my business page.",
+      link: "https://vt.tiktok.com/ZS9C3L5H6/"
+    }
   ],
 
   // Niche Section

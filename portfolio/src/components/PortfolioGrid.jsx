@@ -25,13 +25,20 @@ export default function PortfolioGrid({ photos, fallbackPhotos, isSanity }) {
                 />
               </div>
             ))
-          : fallback.map((src, i) => (
-              <div key={i} className="group overflow-hidden rounded-md glass cursor-pointer aspect-[3/4]">
-                <img 
-                  src={src} 
-                  alt={`Portfolio piece ${i+1}`} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+          : fallback.map((item, i) => (
+              <div key={i} className="flex flex-col">
+                <div className="group overflow-hidden rounded-md glass cursor-pointer aspect-[3/4]">
+                  <img 
+                    src={item.src || item} 
+                    alt={`Portfolio piece ${i+1}`} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                {item.caption && (
+                  <p className="mt-2 text-sm text-slate-600 whitespace-pre-wrap leading-relaxed">
+                    {item.caption}
+                  </p>
+                )}
               </div>
             ))
         }

@@ -26,17 +26,36 @@ export default function VideoGrid({ videos, fallbackVideos, isSanity }) {
                 </video>
               </div>
             ))
-          : fallback.map((src, i) => (
-              <div key={i} className="group overflow-hidden rounded-md glass cursor-pointer aspect-[9/16] relative bg-black/5">
-                <video 
-                  src={src} 
-                  className="w-full h-full object-cover"
-                  controls
-                  playsInline
-                  preload="metadata"
+          : fallback.map((item, i) => (
+              <div key={i} className="flex flex-col">
+                <a 
+                  href={item.link || '#'} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group overflow-hidden rounded-md glass cursor-pointer aspect-[9/16] relative bg-black/5"
                 >
-                  Your browser does not support the video tag.
-                </video>
+                  <video 
+                    src={item.src || item} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+                {item.caption && (
+                  <p className="mt-3 text-sm text-slate-600 whitespace-pre-wrap leading-relaxed italic">
+                    {item.caption}
+                  </p>
+                )}
               </div>
             ))
         }
