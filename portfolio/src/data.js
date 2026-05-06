@@ -5,8 +5,6 @@ import aboutImg from "./assets/photo_2026-05-05_15-36-40.jpg";
 
 import photo1 from "./assets/photo_2026-05-05_15-36-45.jpg";
 import photo2 from "./assets/photo_2026-05-05_15-36-40.jpg";
-import photo3 from "./assets/photo_2026-05-05_15-36-35.jpg";
-import photo4 from "./assets/photo_2026-05-05_15-36-28.jpg";
 import photo5 from "./assets/photo_2026-05-05_15-36-20.jpg";
 import photo6 from "./assets/photo_2026-05-05_15-36-17.jpg";
 
@@ -67,8 +65,6 @@ export const siteData = {
     },
     { src: photo1 },
     { src: photo2 },
-    { src: photo3 },
-    { src: photo4 },
     { src: photo5 },
     { src: photo6 },
     { src: photo7 },
