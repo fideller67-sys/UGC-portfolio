@@ -5,7 +5,9 @@ import aboutImg from "./assets/photo_2026-05-05_15-36-40.jpg";
 
 import photo1 from "./assets/photo_2026-05-05_15-36-45.jpg";
 import photo2 from "./assets/photo_2026-05-05_15-36-40.jpg";
-import photo5 from "./assets/photo_2026-05-05_15-36-20.jpg"
+import photo3 from "./assets/photo_2026-05-05_15-36-35.jpg";
+import photo4 from "./assets/photo_2026-05-05_15-36-28.jpg";
+import photo5 from "./assets/photo_2026-05-05_15-36-20.jpg";
 import photo6 from "./assets/photo_2026-05-05_15-36-17.jpg";
 
 import photoFirst1 from "./assets/photo_2026-05-05_15-35-44.jpg";
