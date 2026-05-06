@@ -74,6 +74,7 @@ function App() {
           testimonialDate: settings.testimonialDate || fallbackData.contact.testimonialDate,
           reachOutText: settings.reachOutText || fallbackData.contact.reachOutText,
         },
+        secondToLastSection: fallbackData.secondToLastSection,
         _isSanity: true,
       }
     : { ...fallbackData, _isSanity: false };
