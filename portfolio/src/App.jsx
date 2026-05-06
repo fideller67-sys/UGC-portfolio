@@ -4,6 +4,7 @@ import About from './components/About';
 import PortfolioGrid from './components/PortfolioGrid';
 import VideoGrid from './components/VideoGrid';
 import Niche from './components/Niche';
+import SecondToLastSection from './components/SecondToLastSection';
 import Contact from './components/Contact';
 import { fetchSiteSettings, fetchPhotos, fetchVideos } from './sanityClient';
 import { siteData as fallbackData } from './data';
@@ -99,6 +100,7 @@ function App() {
           <PortfolioGrid photos={photos} fallbackPhotos={data._isSanity ? [] : fallbackData.photos} isSanity={data._isSanity} />
           <VideoGrid videos={videos} fallbackVideos={data._isSanity ? [] : fallbackData.videos} isSanity={data._isSanity} />
           <Niche data={data} />
+          <SecondToLastSection data={data} />
           <Contact data={data} />
         </div>
       </main>

@@ -24,17 +24,19 @@ import photo14 from "./assets/photo_2026-05-05_15-36-59.jpg";
 // Video assets
 import video1 from "./assets/video_2026-05-06_00-49-10.mp4";
 import video2 from "./assets/video_2026-05-06_00-53-29.mp4";
+import videoNew from "./assets/WhatsApp Video 2026-05-06 at 18.59.59.mp4";
+
+// Second to last image
+import secondToLastImg from "./assets/photo_2026-05-06_18-48-43.jpg";
 
 export const siteData = {
   // General Info
   name: "Okorie Jennifer",
   role: "UGC Creator",
-  email: "nwankwojennifer862@gmail.com",
+  email: "okoriejenny31@gmail.com",
   phone: "+234 9166645513", // e.g., "+234 123456789 - telegram"
   socials: {
-    instagram: "https://instagram.com/yourprofile",
-    tiktok: "https://tiktok.com/@yourprofile",
-    twitter: "https://twitter.com/yourprofile", // optional
+    tiktok: "https://www.tiktok.com/@captain_niffer_1?lang=en"
   },
 
   // Hero Section
@@ -82,37 +84,38 @@ export const siteData = {
   // For TikTok embeds, you would need to use a TikTok embed component instead of a <video> tag.
   videos: [
     {
+      src: videoNew,
+      caption: "Latest creation - Playing on site with sound",
+      playOnSite: true
+    },
+    {
       src: video1,
       caption: "This is the content I created for my school trade fair event.",
-      link: "https://vt.tiktok.com/ZS9CcSMMQ/"
+      link: "https://vt.tiktok.com/@captain_niffer_1/video/7464010996841267462"
     },
     {
       src: video2,
       caption: "Check out this TikTok I posted! https://vt.tiktok.com/ZS9C3L5H6/\n\nYou can also take a look at my product video in my business page.",
-      link: "https://vt.tiktok.com/ZS9C3L5H6/"
+      link: "https://www.tiktok.com/@captain_niffer_1/video/7463553250106887430"
     }
   ],
+  
+  // Second to Last Section
+  secondToLastSection: {
+    image: secondToLastImg
+  },
 
   // Niche Section
   niche: {
     categories: [
-      "Skin care (Dark Skin focused bran)",
+      "Skin care (Caramel Skin focused brand)",
       "Life style and events",
       "Online content and branding"
     ],
     description1: "I work with beauty, fashion and lifestyle brands that wants their product showed case in a natural and relatable way.",
     description2: "Brand benefit from working with me because I understand how to create content that builds trust increase engagement and encourage viewers to take action.",
     portfolioText1: "I'm a UGC Creator who specializes in creating visual appealing and engaging content for beauty and lifestyle brand.",
-    portfolioText2: "I Create short form videos including product demo,lifestyle, videos, voice overs, testimonial, unboxing and aesthetic product shot for social media and ads.",
+    portfolioText2: "I Create short form videos including product demo,lifestyle, videos, voice overs, testimonial, unboxing and aesthetic product. Shot for social media and ads.",
     footerQuote: "I create content for brands looking to content with their audience on platforms like TikTok and Instagram through organic user style content."
-  },
-
-  // Contact / Testimonial Section
-  contact: {
-    testimonialQuote: "Nwankwo Jennifer for the last collaboration you did with us was super amazing, honestly we would really love to work with you again",
-    testimonialAuthor: "Stella David",
-    testimonialRole: "Digital marketer",
-    testimonialDate: "December 29th 2023",
-    reachOutText: "Your name is so fast and always on-trend. She's honestly one of the 1% creators we've seen so far. so reliable and consistently understands out community."
   }
 };
