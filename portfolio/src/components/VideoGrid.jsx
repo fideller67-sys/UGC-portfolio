@@ -8,13 +8,14 @@ export default function VideoGrid({ videos, fallbackVideos, isSanity }) {
 
 
   return (
-    <section className="w-full py-16 px-4 md:px-12 lg:px-24 border-b border-pink-200/50 bg-[#FFF0F5]/50">
-      <div className="flex justify-between items-center mb-8">
+    <section className="w-full py-16 px-6 md:px-12 lg:px-24 border-b border-pink-200/50 bg-[#FFF0F5]/50">
+      <div className="flex justify-between items-center mb-10">
         <h3 className="text-xs tracking-[0.2em] font-bold text-slate-500 uppercase font-serif">My Works</h3>
         <h3 className="text-xs tracking-[0.2em] font-bold text-slate-500 uppercase font-serif">UGC</h3>
       </div>
       
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12">
+
         {items.map((item, i) => {
           const contentUrl = item.videoUrl || item.src || item;
           const isVideo = typeof contentUrl === 'string' && contentUrl.endsWith('.mp4');
