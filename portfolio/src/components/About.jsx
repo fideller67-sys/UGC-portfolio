@@ -1,7 +1,23 @@
+import React, { useState } from 'react';
 import { urlFor } from '../sanityClient';
 
 export default function About({ data }) {
+  const [copied, setCopied] = useState(false);
+
+
+  const handleCopyEmail = (e) => {
+    // Force the redirect via JS for better reliability
+    window.location.href = `mailto:${data.email}`;
+    
+    // Also copy to clipboard
+    navigator.clipboard.writeText(data.email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+
   const getImgSrc = (img) => {
+
     if (!img) return '';
     if (typeof img === 'string') return img;
     return urlFor(img).width(400).url();
@@ -25,10 +41,25 @@ export default function About({ data }) {
             <p>{data.about.bioParagraph1}</p>
             <p>{data.about.bioParagraph2}</p>
           </div>
-          <div className="mt-8 text-sm text-slate-600">
-            <p>{data.email}</p>
+          <div className="mt-8 text-sm text-slate-600 relative">
+            <p className="flex items-center gap-2 justify-center md:justify-start">
+              <a 
+                href={`mailto:${data.email}`} 
+                onClick={handleCopyEmail}
+                className="hover:text-pink-600 transition-colors font-medium border-b border-transparent hover:border-pink-300 pb-0.5"
+              >
+                {data.email}
+              </a>
+              {copied && (
+                <span className="text-[10px] uppercase tracking-widest font-bold text-pink-500 animate-bounce">
+                  Copied!
+                </span>
+              )}
+            </p>
             <p>{data.phone} - telegram</p>
           </div>
+
+
         </div>
       </div>
       <div className="py-24 px-6 text-center border-b border-pink-200/50 flex flex-col items-center justify-center min-h-[40vh]">

@@ -2,10 +2,11 @@ import { urlFor } from '../sanityClient';
 
 export default function PortfolioGrid({ photos, fallbackPhotos, isSanity }) {
   // Use Sanity photos if available, otherwise use fallback URL strings
-  const items = isSanity && photos.length > 0 ? photos : null;
-  const fallback = !isSanity ? fallbackPhotos : null;
+  const items = (isSanity && photos && photos.length > 0) ? photos : null;
+  const fallback = (!isSanity && fallbackPhotos) ? fallbackPhotos : [];
 
-  if (!items && (!fallback || fallback.length === 0)) return null;
+  if (!items && fallback.length === 0) return null;
+
 
   return (
     <section className="w-full py-16 px-4 md:px-12 lg:px-24 border-b border-pink-200/50">
