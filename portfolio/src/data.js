@@ -107,7 +107,7 @@ export const siteData = {
     },
     {
       src: video2,
-      caption: "Check out this TikTok I posted! https://vt.tiktok.com/ZS9C3L5H6/\n\nYou can also take a look at my product video in my business page.",
+      caption: "You can also take a look at my product video on my business page.",
       link: "https://www.tiktok.com/@captain_niffer_1/video/7463553250106887430"
     },
     {
@@ -140,19 +140,18 @@ export const siteData = {
     },
     {
       src: photo6,
-      caption: "Architecture & Real Estate Showcase",
-    },
-    {
-      src: photo7,
       caption: "Landscape & Travel Content",
     },
     {
-      src: photo11,
-      caption: "Aesthetic Product Photography - Skincare",
+      src: photo7,
+      caption: "Creative Fashion & Lifestyle Shots",
+    },
+    {
+      src: photo11
     },
     {
       src: photo12,
-      caption: "Creative Fashion & Lifestyle Shots",
+      caption: "Architecture & Real Estate Showcase",
     }
   ],
 
