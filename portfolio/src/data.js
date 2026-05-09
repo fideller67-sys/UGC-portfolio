@@ -26,6 +26,7 @@ import photo11 from "./assets/photo_2026-05-05_15-36-06.jpg";
 import photo12 from "./assets/photo_2026-05-05_15-36-12.jpg";
 import photo13 from "./assets/photo_2026-05-05_15-36-55.jpg";
 import photo14 from "./assets/photo_2026-05-05_15-36-59.jpg";
+import photo15 from "./assets/photo_2026-05-05_15-36-35.jpg";
 import work1 from "./assets/WhatsApp Image 2026-05-07 at 09.41.24.jpeg";
 import work2 from "./assets/WhatsApp Image 2026-05-07 at 09.41.25 (1).jpeg";
 import work3 from "./assets/WhatsApp Image 2026-05-07 at 09.41.25 (2).jpeg";
@@ -97,7 +98,7 @@ export const siteData = {
   videos: [
     {
       src: videoNew,
-      caption: "Behind the scenes / Lifestyle content",
+      caption: "Behind the scenes",
       playOnSite: true
     },
     {
@@ -123,8 +124,8 @@ export const siteData = {
       caption: "Lifestyle & Accessories - Cherry Print Bag",
     },
     {
-      src: workVideo,
-      caption: "Latest creation - Playing on site with sound",
+      src: photo15,
+      caption: "Lifestyle content",
     },
     {
       src: photoFood,
@@ -147,7 +148,8 @@ export const siteData = {
       caption: "Creative Fashion & Lifestyle Shots",
     },
     {
-      src: photo11
+      src: photo11,
+      caption: "Creative Fashion & Lifestyle Shots",
     },
     {
       src: photo12,
