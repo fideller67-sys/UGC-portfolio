@@ -97,7 +97,7 @@ export const siteData = {
   videos: [
     {
       src: videoNew,
-      caption: "Latest creation - Playing on site with sound",
+      caption: "Behind the scenes / Lifestyle content",
       playOnSite: true
     },
     {
@@ -124,7 +124,7 @@ export const siteData = {
     },
     {
       src: workVideo,
-      caption: "Behind the scenes / Lifestyle content",
+      caption: "Latest creation - Playing on site with sound",
     },
     {
       src: photoFood,
@@ -197,6 +197,6 @@ export const siteData = {
     description2: "Brand benefit from working with me because I understand how to create content that builds trust increase engagement and encourage viewers to take action.",
     portfolioText1: "I'm a UGC Creator who specializes in creating visual appealing and engaging content for beauty and lifestyle brand.",
     portfolioText2: "I Create short form videos including product demo,lifestyle, videos, voice overs, testimonial, unboxing and aesthetic product. Shot for social media and ads.",
-    footerQuote: "I create content for brands looking to content with their audience on platforms like TikTok and Instagram through organic user style content."
+    footerQuote: "I create content for brands looking to content with their audience on platforms like TikTok through organic user style content."
   }
 };
